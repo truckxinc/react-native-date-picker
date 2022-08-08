@@ -132,7 +132,7 @@ public abstract class Wheel {
         Mode mode = state.getMode();
         if(state.derived.hasOnly2Wheels()) return 10;
         switch (mode){
-            case date: return 15;
+            case date: return 40;
             case time:
             case datetime:
             default:

@@ -30,8 +30,8 @@ import cn.carbswang.android.numberpickerview.library.NumberPickerView;
 public class Wheels {
 
     private final State state;
-    private final NumberPickerView emptyStart;
-    private final NumberPickerView emptyEnd;
+    // private final NumberPickerView emptyStart;
+    // private final NumberPickerView emptyEnd;
     private HourWheel hourWheel;
     private DayWheel dayWheel;
     private MinutesWheel minutesWheel;
@@ -56,8 +56,8 @@ public class Wheels {
         minutesWheel = new MinutesWheel(getPickerWithId(R.id.minutes), state);
         ampmWheel = new AmPmWheel(getPickerWithId(R.id.ampm), state);
         hourWheel = new HourWheel(getPickerWithId(R.id.hour), state);
-        emptyStart = (NumberPickerView) rootView.findViewById(R.id.empty_start);
-        emptyEnd = (NumberPickerView) rootView.findViewById(R.id.empty_end);
+        // emptyStart = (NumberPickerView) rootView.findViewById(R.id.empty_start);
+        // emptyEnd = (NumberPickerView) rootView.findViewById(R.id.empty_end);
         wheelPerWheelType = getWheelPerType();
         changeAmPmWhenPassingMidnightOrNoon();
     }
@@ -83,28 +83,28 @@ public class Wheels {
     }
 
     void updateHeight() {
-        int shownCount = state.derived.getShownCount();
+        // int shownCount = state.derived.getShownCount();
         applyOnAll(new SetShowCount(shownCount));
-        if(state.getVariant() == Variant.iosClone) {
-            emptyStart.setShownCount(shownCount);
-            emptyEnd.setShownCount(shownCount);
-        }
+        // if(state.getVariant() == Variant.iosClone) {
+        //     emptyStart.setShownCount(shownCount);
+        //     emptyEnd.setShownCount(shownCount);
+        // }
     }
 
     void updateDividerHeight() {
         int height = state.getDividerHeight();
         applyOnAll(new SetDividerHeight(height));
-        if(state.getVariant() == Variant.iosClone) {
-            emptyStart.setDividerHeight(height);
-            emptyEnd.setDividerHeight(height);
-        }
+        // if(state.getVariant() == Variant.iosClone) {
+        //     emptyStart.setDividerHeight(height);
+        //     emptyEnd.setDividerHeight(height);
+        // }
     }
 
     void updateWheelOrder() {
         pickerWrapper.removeAll();
-        if(state.getVariant() == Variant.iosClone) pickerWrapper.addPicker(emptyStart);
+        // if(state.getVariant() == Variant.iosClone) pickerWrapper.addPicker(emptyStart);
         addInOrder();
-        if(state.getVariant() == Variant.iosClone) pickerWrapper.addPicker(emptyEnd);
+        // if(state.getVariant() == Variant.iosClone) pickerWrapper.addPicker(emptyEnd);
     }
 
     Wheel getWheel(WheelType type){

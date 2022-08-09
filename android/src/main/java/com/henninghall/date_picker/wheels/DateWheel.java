@@ -46,7 +46,7 @@ public class DateWheel extends Wheel
 
     @Override
     public Paint.Align getTextAlign() {
-        return Paint.Align.RIGHT;
+        return Paint.Align.CENTER;
     }
 
 }

@@ -132,7 +132,7 @@ public class DayWheel extends Wheel {
 
     @Override
     public Paint.Align getTextAlign() {
-        return Paint.Align.RIGHT;
+        return Paint.Align.CENTER;
     }
 
     private String toTodayString(String value) {

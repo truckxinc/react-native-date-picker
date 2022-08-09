@@ -9,10 +9,8 @@ android:shape="rectangle" >
     android:topLeftRadius="5dp"
     android:topRightRadius="5dp" />
 
-<solid android:color="#Efffff" />
+<solid android:color="#261890ff" />
 
-<stroke
-    android:width="2dp"
-    android:color="#25aaff" />
+
 
 </shape>

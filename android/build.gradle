@@ -27,5 +27,5 @@ dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation 'org.apache.commons:commons-lang3:3.8'
     implementation group: 'net.time4j', name: 'time4j-android', version: '4.8-2021a'
-    implementation files('libs/library-release.aar')
+    api project(':numberpickerview')
 }

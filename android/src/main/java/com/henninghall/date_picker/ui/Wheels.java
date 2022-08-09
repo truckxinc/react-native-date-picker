@@ -95,8 +95,8 @@ public class Wheels {
         int height = state.getDividerHeight();
         applyOnAll(new SetDividerHeight(height));
         if(state.getVariant() == Variant.iosClone) {
-            emptyStart.setDividerHeight(height);
-            emptyEnd.setDividerHeight(height);
+            emptyStart.setDividerHeight(0);
+            emptyEnd.setDividerHeight(0);
         }
     }
 

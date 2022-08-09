@@ -60,8 +60,9 @@ public class IosClone extends NumberPickerView implements Picker {
     public void setTextColor(String color) {
         int fullColor= Color.parseColor(color);
         int fadedColor = Color.parseColor("#70"+ color.substring(1));
+        int selectedColor = Color.parseColor("#1890ff");
         setNormalTextColor(fadedColor);
-        setSelectedTextColor(fullColor);
+        setSelectedTextColor(selectedColor);
     }
 
     @Override

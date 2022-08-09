@@ -34,7 +34,6 @@
             custom:npv_TextSizeNormal="18dp"
             custom:npv_TextSizeSelected="21dp"
             custom:npv_TextColorSelected="#1890ff"
-            custom:npv_SelectedItemBackground="@drawable/background"
             custom:npv_TextColorNormal="#c4c4c4"
             custom:npv_DividerColor="#e5e5e5"
             android:contentDescription="@string/year_description"

@@ -12,7 +12,7 @@ public class SetShowCount implements WheelFunction {
 
     @Override
     public void apply(Wheel wheel) {
-        // wheel.picker.setShownCount(this.count);
+        wheel.picker.setShownCount(this.count);
     }
 }
 

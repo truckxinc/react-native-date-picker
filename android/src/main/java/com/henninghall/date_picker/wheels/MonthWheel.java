@@ -44,7 +44,7 @@ public class MonthWheel extends Wheel
 
     @Override
     public Paint.Align getTextAlign() {
-        return Paint.Align.CENTER;
+        return Paint.Align.LEFT;
     }
 
     @Override

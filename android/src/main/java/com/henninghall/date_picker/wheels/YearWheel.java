@@ -66,7 +66,7 @@ public class YearWheel extends Wheel
 
     @Override
     public Paint.Align getTextAlign() {
-        return Paint.Align.CENTER;
+        return Paint.Align.RIGHT;
     }
 
     @Override

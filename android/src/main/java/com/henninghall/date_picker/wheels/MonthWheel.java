@@ -39,7 +39,7 @@ public class MonthWheel extends Wheel
 
     @Override
     public String getFormatPattern() {
-        return "LLLL";
+        return "LLL";
     }
 
     @Override
@@ -49,7 +49,7 @@ public class MonthWheel extends Wheel
 
     @Override
     public int getHorizontalPadding() {
-        return 1;
+        return 20;
     }
 
 
